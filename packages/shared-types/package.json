@@ -1,0 +1,23 @@
+{
+  "name": "shared-types",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.ts",
+  "scripts": {
+    "lint": "eslint --cache \"{src,scripts,test}/**/*.ts\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "zod": "^3.19.1"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "workspace:*",
+    "eslint": "7.32.0",
+    "@types/node": "^17.0.12",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.8.3"
+  }
+}
