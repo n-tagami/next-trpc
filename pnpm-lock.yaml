@@ -65,6 +65,7 @@ importers:
       react: 18.2.0
       react-dom: 18.2.0
       shared-types: workspace:*
+      trpc-client-devtools-link: 0.2.1-next
       tsconfig: workspace:*
       typescript: ^4.5.3
       ui: workspace:*
@@ -80,6 +81,7 @@ importers:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       shared-types: link:../../packages/shared-types
+      trpc-client-devtools-link: 0.2.1-next_3salk7rjlacjawr3v5akguwnxa
       ui: link:../../packages/ui
       zod: 3.19.1
     devDependencies:
@@ -1137,6 +1139,13 @@ packages:
     engines: {node: '>= 0.6'}
     dev: false
 
+  /copy-anything/3.0.2:
+    resolution: {integrity: sha512-CzATjGXzUQ0EvuvgOCI6A4BGOo2bcVx8B+eC2nF862iv9fopnPQwlrbACakNCHRIJbCSBj+J/9JeDf60k64MkA==}
+    engines: {node: '>=12.13'}
+    dependencies:
+      is-what: 4.1.7
+    dev: false
+
   /core-js-pure/3.25.5:
     resolution: {integrity: sha512-oml3M22pHM+igfWHDfdLVq2ShWmjM2V4L+dQEBs0DWVIqEm9WHCwGAlZ6BmyBQGy5sFrJmcx+856D9lVKyGWYg==}
     requiresBuild: true
@@ -2101,6 +2110,11 @@ packages:
       call-bind: 1.0.2
     dev: false
 
+  /is-what/4.1.7:
+    resolution: {integrity: sha512-DBVOQNiPKnGMxRMLIYSwERAS5MVY1B7xYiGnpgctsOFvVDz9f9PFXXxMcTOHuoqYp4NK9qFYQaIC1NRRxLMpBQ==}
+    engines: {node: '>=12.13'}
+    dev: false
+
   /isarray/1.0.0:
     resolution: {integrity: sha512-VLghIWNM6ELQzo7zwmcg0NmTVyWKYjvIeM83yjp0wRDTmUnrM678fQbcKBo6n2CJEF0szoG//ytg+TKla89ALQ==}
     dev: false
@@ -2805,6 +2819,13 @@ packages:
       react: 18.2.0
     dev: false
 
+  /superjson/1.10.1:
+    resolution: {integrity: sha512-7fvPVDHmkTKg6641B9c6vr6Zz5CwPtF9j0XFExeLxJxrMaeLU2sqebY3/yrI3l0K5zJ+H9QA3H+lIYj5ooCOkg==}
+    engines: {node: '>=10'}
+    dependencies:
+      copy-anything: 3.0.2
+    dev: false
+
   /supports-color/5.5.0:
     resolution: {integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==}
     engines: {node: '>=4'}
@@ -2854,6 +2875,17 @@ packages:
   /toidentifier/1.0.1:
     resolution: {integrity: sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA==}
     engines: {node: '>=0.6'}
+    dev: false
+
+  /trpc-client-devtools-link/0.2.1-next_3salk7rjlacjawr3v5akguwnxa:
+    resolution: {integrity: sha512-juHl8SSsVywR7U98KqcRb7/dYVnTcnZNboRF3l87zwtFcbVWz60R2dSAMrjD7jY2qAZ7VJYUbx1gvDKC2SaJvw==}
+    peerDependencies:
+      '@trpc/client': ^10.0.0-proxy-beta.10
+      '@trpc/server': ^10.0.0-proxy-beta.10
+    dependencies:
+      '@trpc/client': 10.0.0-proxy-beta.18_tqbku34r5qoefahmp7wdx2g5ny
+      '@trpc/server': 10.0.0-proxy-beta.18
+      superjson: 1.10.1
     dev: false
 
   /ts-node/10.9.1_ksn4eycaeggbrckn3ykh37hwf4:
