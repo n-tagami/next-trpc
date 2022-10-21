@@ -3,6 +3,8 @@
   "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["dist", "build", "node_modules"],
   "compilerOptions": {
+    "module": "es2022",
+    "types": ["vite/client"],
     "baseUrl": ".",
     "declaration": false,
     "declarationMap": false

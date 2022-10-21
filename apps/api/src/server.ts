@@ -19,4 +19,9 @@ app.use(
     createContext,
   })
 );
-app.listen(4000);
+
+if (import.meta.env.PROD){
+  app.listen(4000)
+}
+
+export const viteNodeApp = app
